@@ -1,20 +1,22 @@
-//Create a react app from scratch.
 import React from "react";
 import ReactDOM from "react-dom";
-//It should display a h1 heading.
 
-//It should display an unordered list (bullet points).
+const firstName = "Andrea";
+const lastName = "Monterrosa";
+
 ReactDOM.render(
   <div>
-    <h1>Hi there!</h1>
-    <ul>
-      <li>I spoke in chinesse for a minute</li>
-      <li>I made the longest English exam in my life, 45 minutes long</li>
-      <li>
-        I have started working on Web DEvelopment Bootcamp once and for all
-      </li>
-    </ul>
+    <h1>
+      Hello! {firstName} {lastName}
+    </h1>
+    <h2>You look awesome! {`${firstName} ${lastName}`} ES6</h2>
+    <p>Your lucky number is {Math.floor(Math.random() * 10)}</p>
   </div>,
   document.getElementById("root")
 );
-//It should contain 3 list elements.
+
+//this is a Expression
+//Math.floor(Math.random()*10)
+
+//this is a statement, because JS have to do some work to get the result
+//if(1==2) return 3;
