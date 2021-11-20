@@ -9,6 +9,13 @@ const inlineStyle = {
   color: "purple",
   fontFamily: "sans-serif"
 };
+
+const today = new Date().getDay();
+if (today >= 3) {
+  inlineStyle.color = "pink";
+  inlineStyle.fontSize = "3rem";
+  inlineStyle.textShadow = "2px 2px 5px skyblue";
+}
 ReactDOM.render(
   <div>
     <h1 style={inlineStyle}>My Favourite Foods</h1>
