@@ -1,22 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const firstName = "Andrea";
-const lastName = "Monterrosa";
+//The paragraphs should say:
+//Created by YOURNAME.
+//Copyright CURRENTYEAR.
 
+const name = "Andrea Monterrosa";
+const year = new Date().getFullYear();
 ReactDOM.render(
   <div>
-    <h1>
-      Hello! {firstName} {lastName}
-    </h1>
-    <h2>You look awesome! {`${firstName} ${lastName}`} ES6</h2>
-    <p>Your lucky number is {Math.floor(Math.random() * 10)}</p>
+    <p>Created by {name} </p>
+    <p>Copyright {`${year}`}</p>
+    {/* I'm printing a string {``} and inside of it I'm printing a variable*/}
   </div>,
   document.getElementById("root")
 );
-
-//this is a Expression
-//Math.floor(Math.random()*10)
-
-//this is a statement, because JS have to do some work to get the result
-//if(1==2) return 3;
